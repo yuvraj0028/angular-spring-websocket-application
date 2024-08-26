@@ -1,0 +1,27 @@
+<!-- NAV BAR -->
+<nav class="navbar bg-body-tertiary fixed-top navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/chat.png" width="30" height="24" class="d-inline-block align-text-top">
+      CHAT BUDDY
+    </a>
+  </div>
+</nav>
+
+<!-- Application Body -->
+<div class="name-inp">
+  <div class="form-container">
+    <mat-form-field class="rounded-text-field">
+      <mat-label>Enter Your Name</mat-label>
+      <input matInput [required]="true" #name (input)="userName = name.value" (keydown.enter)="joinChat()">
+    </mat-form-field>
+    <section>
+      <button mat-flat-button class="rounded-button" (click)="joinChat()">
+        <mat-icon>open_in_new</mat-icon>
+        JUMP TO CHAT
+      </button>
+    </section>
+  </div>
+</div>
+
+<router-outlet #outlet="outlet"></router-outlet>

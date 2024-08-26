@@ -1,0 +1,39 @@
+.navbar-light {
+  background-color: #f8dce4 !important;
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+.name-inp {
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rounded-text-field {
+  width: 300px;
+  display: block;
+}
+
+.rounded-button {
+  width: 300px;
+}
+
+.form-container {
+  height: 200px;
+  width: 350px;
+  background-color: #dc9cac;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+}
