@@ -1,11 +1,30 @@
 import { Component, OnInit } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import {
+  MatFormField,
+  MatFormFieldModule,
+  MatLabel,
+} from '@angular/material/form-field';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-chat',
   standalone: true,
-  imports: [NgxSpinnerModule],
+  imports: [
+    NgxSpinnerModule,
+    MatLabel,
+    MatFormField,
+    MatIcon,
+    MatSelectModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatButtonModule,
+  ],
   templateUrl: './chat.component.html',
   styleUrl: './chat.component.scss',
 })
